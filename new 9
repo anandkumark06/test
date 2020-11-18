@@ -1,0 +1,17 @@
+create table courses (
+crId int primary key,
+crName varchar(20) not null,
+crFee decimal(10,2) not null check (crFee>=1500)
+);
+
+create table students (
+crId int primary key,
+crName varchar(20) not null,
+crFee decimal(10,2) not null check (crFee>=1500)
+);
+
+INSERT INTO KYC_DETAILS
+(FIRST_NAME,LAST_NAME,GENDER,DOB,EMAIL_ID,MOBILE_NUM,ADDRESS,CITY,PINCODE)
+VALUES ("TOM","CAPE",'M','01-01-1985',"ABC@GMAIL.COM",'9886098860',"100 10TH CROSS BANGALORE","BANGALORE",'560099');
+
+https://github.com/SoumyarupGhosh/Java_Full_Stack_B7GN3
